@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { MenuIcon, XIcon, TruckIcon } from 'lucide-react'
 import Logo from "../../assets/download.png"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 const Header = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: false, easing: 'ease-in-out' });
-  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
   const toggleMenu = () => {
@@ -18,7 +12,7 @@ const Header = () => {
     return location.pathname === path
   }
   return (
-    <header className="bg-[#0a2c5e] text-white sticky top-0 z-50 shadow-md" data-aos="fade-down">
+    <header className="bg-[#0a2c5e] text-white sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-2">
