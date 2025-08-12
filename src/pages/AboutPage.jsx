@@ -145,7 +145,7 @@ const AboutPage = () => {
                 Safety & Compliance
               </h2>
               <p className="text-gray-600 mb-4">
-                At Heavy Load Logistics, safety isn't just a priority—it's a
+                At Brij Logistics, safety isn't just a priority—it's a
                 core value embedded in everything we do. We maintain rigorous
                 safety protocols that exceed industry standards and regulatory
                 requirements.
